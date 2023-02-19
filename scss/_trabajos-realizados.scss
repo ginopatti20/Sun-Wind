@@ -1,0 +1,51 @@
+.trabajos-realizados{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .carousel{
+        width: 70%;
+        .carousel-item{
+            height: 450px;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .trabajos-realizados-texto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        h3{
+            color: $color-tres;
+        }
+        p{
+            color: $color-uno;
+        }
+    }   
+
+}
+//mobile max-width: 450px
+@media (max-width: 450px) {
+    .trabajos-realizados{
+        flex-direction: column;
+        .carousel{
+            width: 100%;
+            .carousel-item{
+                height: 300px;
+            }
+        }
+        .trabajos-realizados-texto{
+            h3{
+                font-size: 1.1em;
+            }
+            p{
+                font-size: .9em;
+            }
+        }   
+    
+    }
+}

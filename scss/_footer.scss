@@ -1,0 +1,44 @@
+@import 'variables';
+//destkop
+.footer{
+    height: 200px;
+    background-color: $color-dos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-uno;
+    a{
+        text-decoration: none;
+        :hover{
+            transition: 1.5s;
+            font-size: 3em;
+        }
+        i{
+            color: $color-uno;
+            font-size: 2em;
+        }
+    }
+    
+}
+//mobile
+@media (max-width: 450px) {
+    .footer{
+        h3{
+            font-size: 1.1em;
+        }
+        p{
+            font-size: .9em;
+        }
+        .redes{
+            a{
+                i{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    font-size: 1.3em;
+                }
+            }
+            
+        }
+    }
+  }
