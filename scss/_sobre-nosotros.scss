@@ -1,9 +1,8 @@
-@import 'variables';
 //destkop
 .sobre-nosotros{
   display: flex;
   margin: 20px;
-  .sobre-nosotros-izquierda{
+  .sobre-nosotros__text{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -18,7 +17,7 @@
       color: $color-uno;
     }
   }
-  .sobre-nosotros-derecha{
+  .sobre-nosotros__image{
     display: flex;
     justify-content: center;
     width: 50%;
@@ -28,12 +27,15 @@
     }
   }
 }
+
+
+
 //mobile
 @media (max-width: 450px) {
     .sobre-nosotros{
       display: flex;
       flex-direction: column;
-        .sobre-nosotros-izquierda{
+        .sobre-nosotros__text{
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -52,7 +54,7 @@
           }
 
         }
-      .sobre-nosotros-derecha{
+      .sobre-nosotros__image{
         display: flex;
         justify-content: center;
         width: 100%;

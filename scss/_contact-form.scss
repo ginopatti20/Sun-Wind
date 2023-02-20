@@ -1,0 +1,38 @@
+//destkop
+.contact-form-conteiner{
+    margin: 20px;
+    background-color: $color-cinco;
+    padding: 20px 400px;
+    text-align: center;
+    color: $color-uno;
+    margin-bottom: 0;
+    h3{
+        margin-bottom: 20px;
+    }
+}
+//mobile 450px
+@media (max-width: 450px) {
+    .contact-form-conteiner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        form{
+            padding: 20px;
+            h3{
+                font-size: 1.1em;
+                color: $color-uno;
+            }
+            .mb-3{
+                .form-control{
+                    font-size: .9em;
+                    color: $color-uno;
+                }
+            }
+            button{
+                font-size: .9em;
+                color: $color-cinco;
+            }
+        }
+    }
+}

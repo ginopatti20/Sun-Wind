@@ -78,17 +78,60 @@
     font-size: 1.3em;
   }
 }
-/* PALETA CROMATICA */
-.zona1 {
-  margin-bottom: 20px;
+.redes-sociales {
+  display: flex;
+  justify-content: space-around;
+  background-color: #CDE7E7;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.redes-sociales .red-social {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.redes-sociales .red-social i:hover {
+  transition: 1.5s;
+  font-size: 3em;
+}
+.redes-sociales .red-social #facebook {
+  color: white;
+  background-color: blue;
+}
+.redes-sociales .red-social #instagram {
+  background-color: blueviolet;
+  color: white;
+}
+.redes-sociales .red-social #whatsapp {
+  color: white;
+  background-color: green;
+}
+.redes-sociales .red-social i {
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 24px;
+  line-height: 64px;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border-radius: 100%;
+}
+.redes-sociales .red-social a {
+  text-decoration: none;
+  color: #485551;
 }
 
 /* PALETA CROMATICA */
+.carousel-principal .carousel {
+  margin-bottom: 20px;
+}
+
 .sobre-nosotros {
   display: flex;
   margin: 20px;
 }
-.sobre-nosotros .sobre-nosotros-izquierda {
+.sobre-nosotros .sobre-nosotros__text {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -96,19 +139,19 @@
   background-color: #BFE168;
   text-align: center;
 }
-.sobre-nosotros .sobre-nosotros-izquierda h2 {
+.sobre-nosotros .sobre-nosotros__text h2 {
   color: #485551;
   font-weight: 500;
 }
-.sobre-nosotros .sobre-nosotros-izquierda p {
+.sobre-nosotros .sobre-nosotros__text p {
   color: #485551;
 }
-.sobre-nosotros .sobre-nosotros-derecha {
+.sobre-nosotros .sobre-nosotros__image {
   display: flex;
   justify-content: center;
   width: 50%;
 }
-.sobre-nosotros .sobre-nosotros-derecha img {
+.sobre-nosotros .sobre-nosotros__image img {
   width: 100%;
   object-fit: cover;
 }
@@ -118,7 +161,7 @@
     display: flex;
     flex-direction: column;
   }
-  .sobre-nosotros .sobre-nosotros-izquierda {
+  .sobre-nosotros .sobre-nosotros__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,26 +171,26 @@
     margin-bottom: -40px;
     width: 100%;
   }
-  .sobre-nosotros .sobre-nosotros-izquierda h2 {
+  .sobre-nosotros .sobre-nosotros__text h2 {
     font-size: 1.1em;
     color: #4AAF9E;
   }
-  .sobre-nosotros .sobre-nosotros-izquierda p {
+  .sobre-nosotros .sobre-nosotros__text p {
     font-size: 0.9em;
     color: #485551;
   }
-  .sobre-nosotros .sobre-nosotros-derecha {
+  .sobre-nosotros .sobre-nosotros__image {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  .sobre-nosotros .sobre-nosotros-derecha img {
+  .sobre-nosotros .sobre-nosotros__image img {
     margin-top: 20px;
     width: 100%;
     object-fit: cover;
   }
 }
-.servicios {
+.porque-elegirnos {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,18 +199,18 @@
   background-color: #F3F5EF;
   margin: 20px;
 }
-.servicios .servicios-item {
+.porque-elegirnos .porque-elegirnos__item {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-.servicios .servicios-item h3 {
+.porque-elegirnos .porque-elegirnos__item h3 {
   color: #4AAF9E;
 }
-.servicios .servicios-item p {
+.porque-elegirnos .porque-elegirnos__item p {
   color: #485551;
 }
-.servicios .servicios-item .servicios-item-img i {
+.porque-elegirnos .porque-elegirnos__item .porque-elegirnos__item__icono i {
   margin-right: 20px;
   vertical-align: top;
   font-size: 24px;
@@ -181,19 +224,19 @@
 }
 
 @media (max-width: 450px) {
-  .servicios {
+  .porque-elegirnos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
     padding: 20px;
   }
-  .servicios .servicios-item {
+  .porque-elegirnos .porque-elegirnos__item {
     display: flex;
     flex-direction: row;
     align-items: baseline;
   }
-  .servicios .servicios-item .servicios-item-img i {
+  .porque-elegirnos .porque-elegirnos__item .porque-elegirnos__item__icono i {
     margin-right: 20px;
     vertical-align: top;
     font-size: 24px;
@@ -204,15 +247,15 @@
     border: 1px solid black;
     text-align: center;
   }
-  .servicios .servicios-item-texto {
+  .porque-elegirnos .porque-elegirnos__item__texto {
     display: flex;
     flex-direction: column;
   }
-  .servicios .servicios-item-texto h3 {
+  .porque-elegirnos .porque-elegirnos__item__texto h3 {
     font-size: 1.1em;
     color: #4AAF9E;
   }
-  .servicios .servicios-item-texto p {
+  .porque-elegirnos .porque-elegirnos__item__texto p {
     font-size: 0.9em;
     color: #485551;
   }
@@ -234,16 +277,16 @@
   width: 100%;
   object-fit: cover;
 }
-.trabajos-realizados .trabajos-realizados-texto {
+.trabajos-realizados .trabajos-realizados__text {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 20px;
 }
-.trabajos-realizados .trabajos-realizados-texto h3 {
+.trabajos-realizados .trabajos-realizados__text h3 {
   color: #4AAF9E;
 }
-.trabajos-realizados .trabajos-realizados-texto p {
+.trabajos-realizados .trabajos-realizados__text p {
   color: #485551;
 }
 
@@ -257,14 +300,14 @@
   .trabajos-realizados .carousel .carousel-item {
     height: 300px;
   }
-  .trabajos-realizados .trabajos-realizados-texto h3 {
+  .trabajos-realizados .trabajos-realizados__text h3 {
     font-size: 1.1em;
   }
-  .trabajos-realizados .trabajos-realizados-texto p {
+  .trabajos-realizados .trabajos-realizados__text p {
     font-size: 0.9em;
   }
 }
-.formulario {
+.contact-form-conteiner {
   margin: 20px;
   background-color: #F3F5EF;
   padding: 20px 400px;
@@ -272,89 +315,45 @@
   color: #485551;
   margin-bottom: 0;
 }
-.formulario h3 {
+.contact-form-conteiner h3 {
   margin-bottom: 20px;
 }
 
 @media (max-width: 450px) {
-  .formulario {
+  .contact-form-conteiner {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
   }
-  .formulario form {
+  .contact-form-conteiner form {
     padding: 20px;
   }
-  .formulario form h3 {
+  .contact-form-conteiner form h3 {
     font-size: 1.1em;
     color: #485551;
   }
-  .formulario form .mb-3 .form-control {
+  .contact-form-conteiner form .mb-3 .form-control {
     font-size: 0.9em;
     color: #485551;
   }
-  .formulario form button {
+  .contact-form-conteiner form button {
     font-size: 0.9em;
     color: #F3F5EF;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-* .lineas {
+* .linea-divisoria {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-* .lineas hr {
+* .linea-divisoria hr {
   opacity: 1;
   width: 80%;
 }
 * main {
   background-color: #F3F5EF;
-}
-* .redes-sociales {
-  display: flex;
-  justify-content: space-around;
-  background-color: #CDE7E7;
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-* .redes-sociales .red-social {
-  display: flex;
-  flex-direction: column;
-}
-* .redes-sociales .red-social i:hover {
-  transition: 1.5s;
-  font-size: 3em;
-}
-* .redes-sociales .red-social #facebook {
-  color: white;
-  background-color: blue;
-}
-* .redes-sociales .red-social #instagram {
-  background-color: blueviolet;
-  color: white;
-}
-* .redes-sociales .red-social #whatsapp {
-  color: white;
-  background-color: green;
-}
-* .redes-sociales .red-social i {
-  margin-right: 20px;
-  vertical-align: top;
-  font-size: 24px;
-  line-height: 64px;
-  width: 64px;
-  height: 64px;
-  text-align: center;
-  border-radius: 100%;
-}
-* .redes-sociales .red-social a {
-  text-decoration: none;
-  color: #485551;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -40,7 +40,7 @@
           </nav>
     </header>
     <main class="main">
-        <section class="zona1">
+        <section class="carousel-pricipal">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -60,11 +60,11 @@
                 </button>
               </div>
         </section> 
-        <div class="lineas" id="sobre-nosotros">
+        <div class="linea-divisoria" id="sobre-nosotros">
           <hr>
         </div>
         <section class="sobre-nosotros">
-          <div class="sobre-nosotros-izquierda">
+          <div class="sobre-nosotros__text">
               <h2>¡Sobre nosotros!</h2>
               <p>Somos una empresa líder en el sector de las energías renovables en Bahía Blanca y nos enorgullece contribuir al cuidado del medio ambiente a través de nuestras soluciones innovadoras y sostenibles. En nuestro compromiso por un futuro más verde y limpio, ofrecemos a nuestros clientes una amplia gama de productos y servicios para la generación de energía a partir de fuentes renovables, como la energía solar, la eólica y la hidráulica.
                   En nuestra empresa contamos con un equipo de expertos altamente capacitados y comprometidos con la sostenibilidad, que trabajan en conjunto con nuestros clientes para diseñar y desarrollar soluciones personalizadas y adaptadas a sus necesidades. Además, colaboramos con proveedores locales para fomentar la economía y el empleo en la región.
@@ -73,11 +73,11 @@
                   En resumen, si buscas una empresa de energías renovables comprometida con el medio ambiente, la innovación y la sostenibilidad en Bahía Blanca, no dudes en contactarnos. Estamos seguros de que podemos ayudarte a hacer la transición a una energía más limpia y renovable, y juntos contribuir a un futuro más sostenible para todos.
               </p>
           </div>
-          <div class="sobre-nosotros-derecha">
+          <div class="sobre-nosotros__image">
               <img src="images/FOTOS/Mesa de trabajo 10.jpg" alt="">
           </div>
       </section>
-      <div class="lineas">
+      <div class="linea-divisoria">
         <hr>
       </div>
       <section class="redes-sociales" id="proque-elegirnos">
@@ -100,31 +100,31 @@
         </a>
         </div>
       </section>
-      <section class="servicios">
-        <div class="servicios-item">
-          <div class="servicios-item-img">
+      <section class="porque-elegirnos">
+        <div class="porque-elegirnos__item">
+          <div class="porque-elegirnos__item__icono">
             <i class="fa-solid fa-question"></i>
           </div>
-          <div class="servicios-item-texto">
+          <div class="porque-elegirnos__item__texto">
             <h3>¿Por que utilizar energias renovables?</h3>
             <p>Debemos usar energías renovables porque son limpias, seguras y no agotables, y su uso ayuda a combatir el cambio climático, proteger el medio ambiente y asegurar un futuro energético sostenible.</p>
           </div>
         </div>
-        <div class="servicios-item">
-          <div class="servicios-item-img">
+        <div class="porque-elegirnos__item">
+          <div class="porque-elegirnos__item__icono">
             <i class="fa-solid fa-question"></i>
           </div>
-          <div class="servicios-item-texto">
+          <div class="porque-elegirnos__item__texto">
             <h3>¿Por que elegir Sun & Wind?</h3>
             <p>En Sun & Wind ofrecemos soluciones personalizadas, alta calidad y soporte continuo para garantizar que los sistemas de energía renovable cumplan con los objetivos de los clientes a largo plazo.</p>
           </div>
         </div>
       </section>
-      <div class="lineas" id="trabajos-realizados">
+      <div class="linea-divisoria" id="trabajos-realizados">
         <hr>
       </div>
       <section class="trabajos-realizados">
-        <div class="trabajos-realizados-texto">
+        <div class="trabajos-realizados__text">
           <h3>Trabajos realizados</h3>
           <p>Estos son algunos de los trabajos que hemos realizado en Bahia Blanca y la zona.</p>
         </div>  
@@ -155,25 +155,27 @@
           </button>
         </div>
       </section>
-      <div class="lineas" id="contacto">
+      <div class="linea-divisoria" id="contacto">
         <hr>
       </div>
-      <section class="formulario">
-        <form>
+      <section class="contact-form-conteiner">
+        <form action="https://formsubmit.co/ginopatti20@gmail.com" method="POST">
           <h3>¡Contactate con nosotros!</h3>
           <div class="mb-3">
-            <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Nombre">
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Nombre" name="name">
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
           </div>
           <div class="mb-3">
-              <input type="textarea" class="form-control" id="exampleInputWhatsapp" placeholder="Whatsapp">
+              <input type="textarea" class="form-control" id="exampleInputWhatsapp" placeholder="Whatsapp" name="whatsapp">
             </div>
             <div class="mb-3">
-              <textarea name="" class="form-control" rows="4"  placeholder="Mensaje"></textarea>
+              <textarea name="texto" class="form-control" rows="4"  placeholder="Mensaje"></textarea>
             </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+          <input type="hidden" name="_captcha" value="false">
         </form>
       </section>
     </main>
