@@ -1,4 +1,5 @@
 /* PALETA CROMATICA */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,600&display=swap");
 .header .navbar {
   height: 100px;
   margin: 0;
@@ -24,15 +25,20 @@
 .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
   color: #485551;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-@media (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header .navbar {
     height: auto;
   }
+  .header .navbar .container-fluid {
+    background-color: white;
+  }
   .header .navbar .container-fluid .navbar-toggler {
     margin-right: 20px;
+    border: none;
+    color: black;
   }
   .header .navbar .container-fluid .navbar-brand img {
     object-fit: cover;
@@ -40,7 +46,24 @@
   }
   .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
     padding-left: 20px;
-    color: #485551;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header .navbar {
+    height: auto;
+  }
+  .header .navbar .container-fluid {
+    background-color: white;
+  }
+  .header .navbar .container-fluid .navbar-toggler {
+    margin-right: 20px;
+    border: none;
+  }
+  .header .navbar .container-fluid .navbar-brand img {
+    width: 140px;
+  }
+  .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+    padding-left: 20px;
   }
 }
 /* PALETA CROMATICA */
@@ -310,13 +333,19 @@
 .contact-form-conteiner {
   margin: 20px;
   background-color: #F3F5EF;
-  padding: 20px 400px;
+  padding: 20px;
   text-align: center;
   color: #485551;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-form-conteiner h3 {
   margin-bottom: 20px;
+}
+.contact-form-conteiner form .mb-3 .form-control {
+  width: 500px;
 }
 
 @media (max-width: 450px) {
@@ -336,11 +365,16 @@
   .contact-form-conteiner form .mb-3 .form-control {
     font-size: 0.9em;
     color: #485551;
+    width: 300px;
   }
   .contact-form-conteiner form button {
     font-size: 0.9em;
     color: #F3F5EF;
   }
+}
+* {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
 }
 * .linea-divisoria {
   display: flex;
