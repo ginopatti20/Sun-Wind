@@ -23,5 +23,29 @@
     }
     main{
         background-color: $color-cinco;
-    }   
+    }
+    .logo-whatsapp{
+        position: fixed;
+        right: 5px;
+        bottom: 5px;
+        z-index: 1;
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        :hover{
+            transition: .7s;
+            width: 100px;
+            height: 100px;
+            opacity: .9;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .logo-whatsapp{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
 }

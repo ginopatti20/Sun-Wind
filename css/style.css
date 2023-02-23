@@ -19,7 +19,7 @@
 }
 .header .navbar .container-fluid .navbar-nav .nav-item :hover {
   color: black !important;
-  transition: 1.5s;
+  transition: 0.7s;
   font-size: large;
 }
 .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
@@ -80,7 +80,7 @@
   text-decoration: none;
 }
 .footer a :hover {
-  transition: 1.5s;
+  transition: 0.7s;
   font-size: 3em;
 }
 .footer a i {
@@ -115,7 +115,7 @@
   padding: 1em;
 }
 .redes-sociales .red-social i:hover {
-  transition: 1.5s;
+  transition: 0.7s;
   font-size: 3em;
 }
 .redes-sociales .red-social #facebook {
@@ -388,6 +388,29 @@
 }
 * main {
   background-color: #F3F5EF;
+}
+* .logo-whatsapp {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 1;
+}
+* .logo-whatsapp img {
+  width: 90px;
+  height: 90px;
+}
+* .logo-whatsapp :hover {
+  transition: 0.7s;
+  width: 100px;
+  height: 100px;
+  opacity: 0.9;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo-whatsapp img {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
