@@ -159,12 +159,19 @@
   flex-direction: column;
   width: 50%;
   padding: 20px;
-  background-color: #BFE168;
+  background-color: #F3F5EF;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 .sobre-nosotros .sobre-nosotros__text h2 {
   color: #485551;
   font-weight: 500;
+  font-size: 1.7em;
+  background-color: #BFE168;
+  text-transform: uppercase;
+  text-decoration: underline;
+  width: fit-content;
 }
 .sobre-nosotros .sobre-nosotros__text p {
   color: #485551;
@@ -196,7 +203,7 @@
   }
   .sobre-nosotros .sobre-nosotros__text h2 {
     font-size: 1.1em;
-    color: #4AAF9E;
+    color: #485551;
   }
   .sobre-nosotros .sobre-nosotros__text p {
     font-size: 0.9em;
