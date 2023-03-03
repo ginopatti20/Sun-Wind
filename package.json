@@ -1,0 +1,20 @@
+{
+  "name": "sunandwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginopatti20/Sun-Wind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginopatti20/Sun-Wind/issues"
+  },
+  "homepage": "https://github.com/ginopatti20/Sun-Wind#readme"
+}

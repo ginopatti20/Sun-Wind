@@ -20,7 +20,6 @@
 .header .navbar .container-fluid .navbar-nav .nav-item :hover {
   color: black !important;
   transition: 0.7s;
-  font-size: large;
 }
 .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
   color: #485551;
